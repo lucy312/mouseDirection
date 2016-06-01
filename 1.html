@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,target-densitydpi=high-dpi,minimal-ui "/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <link rel="apple-touch-icon-precomposed" href="http://pubunder.artron.net/pubimgs/m/icon.png">
+    <script src="../rem.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        *{margin: 0; padding: 0;}
+        body{font-size: 1rem;}
+        a{text-decoration: none;}
+        /*a:-webkit-any-link*/
+        .container{width: 11.25rem;height:11.25rem;margin:2.5rem auto;border:1px solid #eee;overflow: hidden;}
+        .img{width:100%;display:block;transform:rotate(-100deg);transform-origin: top right;transition:all 1s ease;}
+        img{width:100%;}
+        .current .img{transform: rotate(0deg);transition:all 1s ease;transform-origin: top right;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="img">
+        <img src="images/2.jpg" alt="dengziqi"/>
+    </div>
+</div>
+
+<script>
+    var container=document.querySelector('.container');
+    container.addEventListener('click',function(){
+        this.classList.toggle('current');
+    },false);
+</script>
+</body>
+</html>
